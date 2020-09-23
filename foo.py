@@ -10,4 +10,5 @@ def decimal_translator_2(number, base):
         if a >= base:
             return 'None'
         count += a * (base ** i)
+
     return count
