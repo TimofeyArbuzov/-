@@ -1,11 +1,7 @@
-def decimal_translator(number, base):
-    base = int(base)
-    a = 0
-    for i in range(len(number)):
-        if int(number[i - 1]) >= base:
-            a = int(number[i - 1]) // base
-            a += a * (10 ** i)
-        elif int(number[i - 1]) <= base:
-            a = (int(number[i - 1]) * 10 + int(number[i])) // base
-            a += a * (10 ** i)
-decimal_translator(number, base)
+def decimal_translator(num, base):
+    newnum = ''
+    if 2 <= base <= 9:
+        while num > 0:
+            newnum = str(num % base) + newnum
+            num //= base
+    return(newnum)
