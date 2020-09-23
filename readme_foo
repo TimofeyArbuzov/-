@@ -1,0 +1,1 @@
+def decimal_translator_2(int(number), int(base)) - функция возвращает число number в системе счисления base.
